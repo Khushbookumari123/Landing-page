@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Bootstrap Font Icon CSS -->
+     <link rel="stylesheet" href=
+     "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .header {
+            width: 100%;
+            height: 45px;
+            background-image: linear-gradient(to right, rgb(245, 160, 50), rgb(231, 5, 163));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .header_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .contact {
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .request {
+            border: 2px solid white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .brand_header {
+            width: 100%;
+            height: 70px;;
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand_logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+            height:50px;
+        }
+
+        .brand_name {
+            font-size: 24px;
+            font-weight: bolder;
+            margin-left: 10px;
+            font-style: oblique;
+        }
+
+        .navbar {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-btn {
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+
+        .navbar-btn:hover {
+            background-color: rgb(245, 160, 50);
+            color: white;
+            cursor: pointer;
+        }
+
+        .crasual {
+            position: relative;
+            width:100%;
+            height:450px;
+        }
+
+        .carousel-item {
+            height: 450px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .carousel-caption h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .carousel-caption .buttons {
+            margin-top: 20px;
+        }
+
+        .carousel-caption .buttons a {
+            text-transform: uppercase;
+            padding: 10px 20px;
+            background-color: rgb(231, 5, 163);
+            color: white;
+            margin: 0 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .service {
+            width: 100%;
+            padding: 50px 20px;
+            background-image: linear-gradient(to right, rgb(245, 160, 50), rgb(231, 5, 163));
+            text-align: center;
+            color: white;
+        }
+
+        .service h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .service p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .about {
+            width: 100%;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .about p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #777;
+        }
+
+        .about img {
+            width: 150px;
+            margin-top: 20px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        .service-box {
+            width: 30%;
+            text-align: center;
+        }
+
+        .service-box img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .service-box h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .service-box p {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_inner">
+            <div class="icon">
+                <a href="#"><img src="images/twitter.png"></a>
+                <a href="#"><img src="images/linkedin.png"></a>
+                <a href="#"><img src="images/fb.png"></a>
+                <a href="#"><img src="images/insta.png"></a>
+                <a href="#"><img src="images/yt.png"></a>
+            </div>
+            <div class="contact">
+                +91 62047 49146 | khushbookumarik153@gmail.com
+            </div>
+            <div class="request">
+                REQUEST A CONTACT
+            </div>
+        </div>
+    </div>
+
+    <div class="brand_header">
+        <div class="brand_logo">
+            <div class="logo">
+                <img src="images/download.png" alt="Logo">
+            </div>
+            <h1 class="brand_name">Enterprises</h1>
+        </div>
+
+        <ul class="navbar">
+            <li class="navbar-btn">Home</li>
+            <li class="navbar-btn">Projects</li>
+            <li class="navbar-btn"><a href="#services">Services</a></li>
+            <li class="navbar-btn"><a href="#about">About</a></li>
+            <li class="navbar-btn"><a href="#developer">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide crasual" data-bs-ride="carousel" data-bs-interval="2500">
+
+ <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/pic1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>Learn Digitali Courses</h1>
+                    <div class="buttons">
+                        <a href="#">Read More</a>
+                        <a href="#">Request a Consult</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pic2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>Support any time </h1>
+                    <div class="buttons">
+                        <a href="#">Our Services</a>
+                        <a href="#developer">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pic3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>We are Give you Opportunity</h1>
+                    <div class="buttons">
+                        <a href="#">Learn More</a>
+                        <a href="#">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="service" id="services">
+        <h2>Our Services</h2>
+        <p>We offer a range of services to help you achieve the results you're after.</p>
+   <hr>
+        <div class="row mt-3">
+    <div class="col-md-2"></div>
+    <div class="col-md-3">
+        <i class="bi bi-binoculars" style="float:left;"></i>
+        <h3 style="float:left; margin-left:15px;">Enquiry Team</h3>
+        <br/><hr>
+        <p>If you have any query then contact us we are support you</p>
+    </div>
+    
+    <div class="col-md-3">
+        <i class="bi bi-headphones" style="float:left;"></i>
+        <h3 style="float:left; margin-left:15px;">Online Support Team</h3>
+        <br/><hr>
+        <p>We are any time available for our Students in any probles any contact us.</p>
+    </div>
+
+    <div class="col-md-3">
+        <i class="bi bi-hourglass-split" style="float:left;"></i>
+        <h3 style="float:left; margin-left:15px;">Time Management</h3>
+        <br><hr>
+        <p>We are any time issu for the time releted then you can contact us.</p>
+    </div>
+   </div>
+    </div>
+
+    <div class="row">
+        <div class="colmd-12 about" id="about">
+            <h2>About Us</h2>
+        <p>We are passionate about achieving better results for our clients.</p>
+        </div>
+        <div class="row" style="margin-top:-20px; margin-left:100px;">
+            <div class="col-md-6">
+                <h3>We are provide 100% satisfaction to our Clint</h3>
+                <hr>
+                <p>1. Set Clear Goals:
+                    - Define Your Objectives: Know what you want to achieve in each study session.
+                     Break Down Tasks:* Divide large topics into smaller, manageable </p>
+                <p>
+                    2. Create a Study Schedule
+   - Consistent Routine: Study at the same time each day to build a habit.
+   - Time Management: Allocate specific time slots for each subject or </p>
+
+                    <p>
+                        3. Choose the Right Environment
+   - Quiet Space: Find a distraction-free environment to focus better.
+   - Organized Area: Keep your study space tidy and have all necessary materials at hand.</p>
+
+                        <p>
+                            4. Active Learning Techniques
+   - Take Notes: Summarize information in your own words.
+   - Practice Questions: Test yourself regularly to reinforce learning.
+   - Teach Others: Explain the material to someone else to deepen your understanding.
+                        </p>
+
+                        <p>
+                            5. Use Study Aids
+   - Flashcards: Great for memorizing facts, vocabulary, or formulas.
+   - Diagrams and Charts: Visual aids can help you understand complex concepts.
+                        </p>
+            </div>
+
+            <div class="col-md-6">
+    <div class="about">
+        
+        <img src="images/clg.png" alt="About Us">
+        <h4>Khushboo Kumari </h4>
+    </div>
+</div>
+</div>
+
+</div>
+
+    <div class="services" id="developer">
+        <div class="service-box">
+            <a href="images/emp.jpg"><img src="images/emp.jpg" alt="User Experience"></a>
+            <h3>Empolyee Experience</h3>
+            <p>Our Empolyees are the best because we are like a Family.</p>
+        </div>
+        <div class="service-box">
+            <h3>Developed By </h3>
+            <hr>
+            <h5>Khushboo Kumari Singh</h5>
+            <p>+91 62047 49146</p>
+            <p>khushbookumarik153@gmail.com</p>
+            <p>Dehri On Sone Rohas (Bihar) </p>
+        </div>
+        <div class="service-box">
+           <a href="images/khub.png"> <img src="images/khub.png" alt="Creative Design"></a>
+            <h3>Creative Design</h3>
+            <p>One of the Best Desing Miss <b>Khushboo Kumari Singh</b> </p>
+        </div>
+        \
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
